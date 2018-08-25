@@ -15,14 +15,14 @@
 #define DEFAULT_LABEL_MAX_HEIGHT 22
 #define DEFAULT_LABEL_MAX_WIDTH 70
 
-#define DEFAULT_LABEL_MID_HEIGHT 15
-#define DEFAULT_LABEL_MID_WIDTH 45
+#define DEFAULT_LABEL_MID_HEIGHT 20
+#define DEFAULT_LABEL_MID_WIDTH 50
 
-#define DEFAULT_LABEL_MIN_HEIGHT 10
+#define DEFAULT_LABEL_MIN_HEIGHT 20
 #define DEFAULT_LABEL_MIN_WIDTH 40
 
-#define DEFAULT_MAX_FONT_SIZE 10
-#define DEFAULT_MIN_FONT_SIZE 10
+#define DEFAULT_MAX_FONT_SIZE 18
+#define DEFAULT_MIN_FONT_SIZE 16
 
 @interface WYPieChartForegroundView ()
 
@@ -53,7 +53,7 @@
             currentLabel.textAlignment = NSTextAlignmentCenter;
             currentLabel.layer.cornerRadius = 2.0;
             currentLabel.clipsToBounds = true;
-            currentLabel.font = [UIFont systemFontOfSize:8.0];
+            currentLabel.font = [UIFont systemFontOfSize:18];
             
             const CGFloat* textColors = CGColorGetComponents(_labelsTextColor.CGColor);
             if (CGColorGetNumberOfComponents(_labelsTextColor.CGColor) == 2) {
